@@ -8,16 +8,24 @@ app = FastAPI()
 
 @app.get('/dataset/{dataset_id}')
 def get_dataset(dataset_id: int):
-    url = f"https://www.openml.org/api/v1/json/data/{dataset_id}"
-    response = requests.get(url)
-    data = response.json()
+     # URL to fetch the dataset description
+    description_url = f"https://www.openml.org/api/v1/json/data/{dataset_id}"
+    description_response = requests.get(description_url)
+    description_data = description_response.json()
 
-    #Create 'data' director if it does not exist
-    os.makedirs('data', exist_ok = True)
+    # Extract the URL of the actual dataset
+    dataset_url = description_data['data_set_description']['url']
 
-    #Save JSON to local file 
-    json_file_path = f'data/dataset_{dataset_id}.json'
-    with open(json_file_path, 'w') as json_file:
-        json.dump(data, json_file)
-    
+    # Fetch the actual dataset
+    dataset_response = requests.get(dataset_url)
+    dataset_content = dataset_response.content
+
+    # Create 'data' directory if it does not exist
+    os.makedirs('data', exist_ok=True)
+
+    # Save the dataset to a local file
+    dataset_file_path = f'data/dataset_{dataset_id}.csv'
+    with open(dataset_file_path, 'wb') as dataset_file:
+        dataset_file.write(dataset_content)
+
     return {"message": 'Dataset saved'}
