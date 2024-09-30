@@ -9,18 +9,18 @@ applied to make predictions, and the models are thoroughly evaluated. Finally, t
 This project show case the process of extracting,transforming, and loadking data from an API into a local MySQL database.
 
 ## Folder Structure
-- **extract_and_transform.py**: /n/
-		. **Description**: Script to download the `marketing.csv` dataset from the API /n/
-		. **Execution**: Run `python extract_and_transform.py` to execute the script.
+- **extract_and_transform.py**: 
+	. **Description**: Script to download the `marketing.csv` dataset from the API. 
+	. **Execution**: Run `python extract_and_transform.py` to execute the script.
 
 
 - **Load.py**:
-		. **Description**: Script to load the dataset into the `customer_purchase` database, specifically into the `customer_purchase` table.
-	 	. **Executuin**: Run `Load.py` to execute the sript
+	. **Description**: Script to load the dataset into the `customer_purchase` database, specifically into the `customer_purchase` table.
+	. **Executuin**: Run `Load.py` to execute the sript.
 
 ## Database Configuration:
 - **Local MySQL Database**: the database is hosted locally on your computer. Ensure that the connection detail in the scripts are correctly
-configured to connect to your local MySQL instance
+configured to connect to your local MySQL instance.
 
 
 ### Data_Analysis:
