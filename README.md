@@ -30,11 +30,16 @@ This project show case the process of extracting,transforming, and loadking data
 configured to connect to your local MySQL instance.
 
 
-### Data_Analysis:
-	This folder contain the Exploration and Analysis part of the project
- 	- 'EDA.ipynb': This is the jupyter notebook that contain the statistical and visualization of the dataset. 
+# Data_Analysis:
+This folder contain the Exploration and Analysis part of the project
 
-### Data_Science: 
+## Content:
+ - **EDA.ipynb**:
+ 
+  - **Description**: This is the jupyter notebook that contain the statistical and visualization of the dataset. It include the statistical summary and visualization to understand data better
+  - 
+
+# Data_Science: 
 	This folder contain the Machine Learning part of the project
 	- 'models.ipynb': this jupyter notebook contain the comparison between 3 models which are Linear_Regression (base model), XGBoost, and Random Forest 
 	After comparing evaluation metrics, XGBoost shows as the best fit model compare to other 2 with the lowest RMSE score
