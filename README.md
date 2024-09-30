@@ -5,12 +5,23 @@ and loading it into a database. The next phase involves exploring and analyzing 
 During this stage, various visualization techniques are employed to gain clearer insights into the data, Subsequently, machine learning algorithms are 
 applied to make predictions, and the models are thoroughly evaluated. Finally, the project is deployed the model into a web application 
 
-### Data_Engineer:
-This folder show case the process I extract and Transform data from API
-	- 'extract_and_transform.py' : this is the python file that can download the dataset marketing.csv from API whenever we run the code.
-						'py extract_and_transform.py'
-	- 'Load.py': This is the python file that I push the dataset into the customer_purchase database under customer_purchase table.
-			. I host the local MYSQL database in my computer, so all the connection in the code that is linked to the MySQL in my laptop
+# Data_Engineer:
+This project show case the process of extracting,transforming, and loadking data from an API into a local MySQL database.
+
+## Folder Structure
+- **extract_and_transform.py**: 
+		- **Description**: Script to download the `marketing.csv` dataset from the API 
+		- **Execution**: Run `python extract_and_transform.py` to execute the script.
+
+
+- **Load.py**:
+		- **Description**: Script to load the dataset into the `customer_purchase` database, specifically into the `customer_purchase` table.
+	 - **Executuin**: Run `Load.py` to execute the sript
+
+## Database Configuration:
+- **Local MySQL Database**: the database is hosted locally on your computer. Ensure that the connection detail in the scripts are correctly
+configured to connect to your local MySQL instance
+
 
 ### Data_Analysis:
 	This folder contain the Exploration and Analysis part of the project
