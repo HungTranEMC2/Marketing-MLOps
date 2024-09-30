@@ -9,7 +9,7 @@ applied to make predictions, and the models are thoroughly evaluated. Finally, t
 This project show case the process of extracting,transforming, and loadking data from an API into a local MySQL database.
 
 ## Folder Structure
-- **extract_and_transform.py**:
+- `**extract_and_transform.py**`:
 
   
   - **Description**: Script to download the `marketing.csv` dataset from the API.
@@ -17,7 +17,7 @@ This project show case the process of extracting,transforming, and loadking data
   - **Execution**: Run `python extract_and_transform.py` to execute the script.
 
 
-- **Load.py**:
+- `**Load.py**`:
 
   
   - **Description**: Script to load the dataset into the `customer_purchase` database, specifically into the `customer_purchase` table.
@@ -34,7 +34,7 @@ configured to connect to your local MySQL instance.
 This folder contain the Exploration and Analysis part of the project
 
 ## Content:
-- **EDA.ipynb**:
+- `**EDA.ipynb**`:
  
   - **Description**: This is the jupyter notebook that contain the statistical and visualization of the dataset. It include the statistical summary and visualization to understand data better
  
@@ -45,7 +45,7 @@ This folder contain the Exploration and Analysis part of the project
 This folder contains the machine learning part of the project.
 
 ## Contents
-- **models.ipynb**:
+- `**models.ipynb**`:
 
 
   - **Description**: This Jupyter notebook compares three machine learning models: Linear Regression (base model), XGBoost, and Random Forest.
