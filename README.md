@@ -1,15 +1,14 @@
 # Marketing-MLOps
 ## Brief Summary
-	This project showcase the full cycle development of a datascience project, from getting data from API, Transform, and Load it to database. 
-	Then I provide Exploration and Analysis steps to understand the distribution, or statistical nature of the dataset, in this stage, I performed 
-	multiple visualization technique to have more clear insight and picture about the data. 
-	Next, I will apply machine learning Algorithms to get the prediction , and evaluate the models. 
-	Last, I will deploy the model into the web app application 
+This project demonstrate the complete lifecycle of a data science initiative. It begins with Extracting data from an API, followed by transformation,
+and loading it into a database. The next phase involves exploring and analyzing the dataset to understand its distribution and statistical properties.
+During this stage, various visualization techniques are employed to gain clearer insights into the data, Subsequently, machine learning algorithms are 
+applied to make predictions, and the models are thoroughly evaluated. Finally, the project is deployed the model into a web application 
 
 ### Data_Engineer:
-	This folder show case the process I extract and Transform data from API
+This folder show case the process I extract and Transform data from API
 	- 'extract_and_transform.py' : this is the python file that can download the dataset marketing.csv from API whenever we run the code.
-					'py extract_and_transform.py'
+						'py extract_and_transform.py'
 	- 'Load.py': This is the python file that I push the dataset into the customer_purchase database under customer_purchase table.
 			. I host the local MYSQL database in my computer, so all the connection in the code that is linked to the MySQL in my laptop
 
