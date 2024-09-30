@@ -34,15 +34,29 @@ configured to connect to your local MySQL instance.
 This folder contain the Exploration and Analysis part of the project
 
 ## Content:
- - **EDA.ipynb**:
+- **EDA.ipynb**:
  
   - **Description**: This is the jupyter notebook that contain the statistical and visualization of the dataset. It include the statistical summary and visualization to understand data better
-  - 
-
-# Data_Science: 
-	This folder contain the Machine Learning part of the project
-	- 'models.ipynb': this jupyter notebook contain the comparison between 3 models which are Linear_Regression (base model), XGBoost, and Random Forest 
-	After comparing evaluation metrics, XGBoost shows as the best fit model compare to other 2 with the lowest RMSE score
-	
-
+ 
     
+  - **Execution**:  Open the notebook in Jupyter and run the cells sequentially to perform the analysis.
+
+# Data_Science
+This folder contains the machine learning part of the project.
+
+## Contents
+- **models.ipynb**:
+
+
+  - **Description**: This Jupyter notebook compares three machine learning models: Linear Regression (base model), XGBoost, and Random Forest.
+
+
+  - **Sections**:
+    
+    - **Model Training**: Steps to train each of the three models.
+      
+    - **Evaluation Metrics**: Comparison of models based on evaluation metrics such as RMSE (Root Mean Squared Error).
+      
+    - **Results**: Analysis showing that XGBoost is the best fit model with the lowest RMSE score.
+      
+  - **Execution**: Open the notebook in Jupyter and run the cells sequentially to train the models and compare their performance.
