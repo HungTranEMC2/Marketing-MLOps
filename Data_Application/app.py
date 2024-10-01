@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import snowflake.connector
 from eda_app import run_eda
 from ml_app import run_ml
 import plotly
