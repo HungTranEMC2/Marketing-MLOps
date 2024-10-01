@@ -44,7 +44,7 @@ This folder contain the Exploration and Analysis part of the project
   - **Execution**:  Open the notebook in Jupyter and run the cells sequentially to perform the analysis.
 
 # Data_Science
-This folder contains the machine learning part of the project. Due to the size limit restriction of GitHub, so you have to run the `model_xgb.py` and `model_random_forest.py` to generate the pickle files
+This folder contains the machine learning part of the project. Due to the file's size limit restriction of GitHub, so you have to run the `model_xgb.py` and `model_random_forest.py` to generate the pickle files
 
 ## Contents
 - `models.ipynb`:
