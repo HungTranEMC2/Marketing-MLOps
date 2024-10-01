@@ -71,7 +71,11 @@ This folder contains the machine learning part of the project.
 - `model_random_forest.py`: This script contains the implementation of the Random Forest model for generating predictions. To create the necessary pickle files for use in the Data App, run the following command:
 
 
-      `py random_forest.py`
+      `py model_random_forest.py`
+
+  
+# Data_Application
+This folder contains the deployment part of the project.
 
 
 
