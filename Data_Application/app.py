@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import snowflake.connector
 from eda_app import run_eda
+from ml_app import run_ml
 import plotly
 import streamlit_option_menu
 from streamlit_option_menu import option_menu
@@ -51,5 +52,6 @@ if selected == "Exploration and Analysis":
     st.title('Exploratory Data Analysis')
     run_eda()
 # ML Page
-if selected == "ML":
+if selected == "Machine Learning":
     st.title('Machine Learning Results')
+    run_ml()
