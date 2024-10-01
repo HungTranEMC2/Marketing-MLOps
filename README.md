@@ -62,3 +62,7 @@ This folder contains the machine learning part of the project.
     - **Results**: Analysis showing that XGBoost is the best fit model with the lowest RMSE score.
       
   - **Execution**: Open the notebook in Jupyter and run the cells sequentially to train the models and compare their performance.
+  
+- `model_xgb.py`: This script contains the implementation of the XGBoost model for generating predictions. To create the necessary pickle files for use in the Data App, run the following command:
+        `py model_xgb.py'
+  
