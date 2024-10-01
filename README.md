@@ -79,7 +79,8 @@ This folder contains the deployment part of the project.
 - `app.py` : this script is designed to deploy the machine learning model and present the results in an interactive web application using Streamlit. This application allows users to input data, generate predictions.
 
   - you can generate prediction by choosing XGBoost button or Random Forest button.
-  - [Uploading image.png…]()
+  - ![image](https://github.com/user-attachments/assets/51453f1d-69cd-4faa-9e9f-a3b282dbd8f4)
+
   - To Execute the `app.py` , run the following command:
 
 
