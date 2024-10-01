@@ -1,4 +1,4 @@
-# Marketing-MLOps
+![image](https://github.com/user-attachments/assets/20dc8184-c3f3-4094-a213-731125a62129)# Marketing-MLOps
 ![image](https://github.com/user-attachments/assets/349e5367-2e88-499a-9025-37c0338f522b)
 
 ## Brief Summary
@@ -76,6 +76,17 @@ This folder contains the machine learning part of the project.
   
 # Data_Application
 This folder contains the deployment part of the project.
+- `app.py` : this script is designed to deploy the machine learning model and present the results in an interactive web application using Streamlit. This application allows users to input data, generate predictions.
+
+  - you can generate prediction by choosing XGBoost button or Random Forest button.
+  - [Uploading image.png…]()
+  - To Execute the `app.py` , run the following command:
+
+
+    `streamlit run app.py`
+    
+ 
+  
 
 
 
