@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/20dc8184-c3f3-4094-a213-731125a62129)# Marketing-MLOps
+# Marketing-MLOps
 ![image](https://github.com/user-attachments/assets/349e5367-2e88-499a-9025-37c0338f522b)
 
 ## Brief Summary
