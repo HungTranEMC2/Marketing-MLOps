@@ -1,4 +1,6 @@
 # Marketing-MLOps
+![image](https://github.com/user-attachments/assets/349e5367-2e88-499a-9025-37c0338f522b)
+
 ## Brief Summary
 This project demonstrate the complete lifecycle of a data science initiative. It begins with Extracting data from an API, followed by transformation,
 and loading it into a database. The next phase involves exploring and analyzing the dataset to understand its distribution and statistical properties.
@@ -42,7 +44,7 @@ This folder contain the Exploration and Analysis part of the project
   - **Execution**:  Open the notebook in Jupyter and run the cells sequentially to perform the analysis.
 
 # Data_Science
-This folder contains the machine learning part of the project.
+This folder contains the machine learning part of the project. Due to the file's size limit restriction of GitHub, so you have to run the `model_xgb.py` and `model_random_forest.py` to generate the pickle files
 
 ## Contents
 - `models.ipynb`:
@@ -60,3 +62,32 @@ This folder contains the machine learning part of the project.
     - **Results**: Analysis showing that XGBoost is the best fit model with the lowest RMSE score.
       
   - **Execution**: Open the notebook in Jupyter and run the cells sequentially to train the models and compare their performance.
+  
+- `model_xgb.py`: This script contains the implementation of the XGBoost model for generating predictions. To create the necessary pickle files for use in the Data App, run the following command:
+
+  
+        `py model_xgb.py'
+
+- `model_random_forest.py`: This script contains the implementation of the Random Forest model for generating predictions. To create the necessary pickle files for use in the Data App, run the following command:
+
+
+      `py model_random_forest.py`
+
+  
+# Data_Application
+This folder contains the deployment part of the project.
+- `app.py` : this script is designed to deploy the machine learning model and present the results in an interactive web application using Streamlit. This application allows users to input data, generate predictions.
+
+  - you can generate prediction by choosing XGBoost button or Random Forest button.
+  - ![image](https://github.com/user-attachments/assets/51453f1d-69cd-4faa-9e9f-a3b282dbd8f4)
+
+  - To Execute the `app.py` , run the following command:
+
+
+    `streamlit run app.py`
+    
+ 
+  
+
+
+
