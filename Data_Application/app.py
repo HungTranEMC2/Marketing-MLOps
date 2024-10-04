@@ -36,7 +36,7 @@ if selected == "Home":
    st.title('Welcome to My Marketing MLOps Project Home Page')
    st.header('Black Friday Sales Analysis and Prediction App')
    current_path = os.getcwd()
-   st.write(f'current_path: ',current_path)
+   
 
    # Define the path to the 'Data_Application' folder and the 'MLOps.png' file
    image_path = os.path.join(current_path, 'Data_Application', 'MLOps.png')
@@ -53,6 +53,8 @@ if selected == "Home":
                """)
 
 if selected == "Data":
+   current_path = os.getcwd()
+   st.write(f'current_path: ',current_path)
    df = get_data()
    st.dataframe(df)
    
