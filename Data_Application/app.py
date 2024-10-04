@@ -37,9 +37,9 @@ if selected == "Home":
    st.header('Black Friday Sales Analysis and Prediction App')
    current_path = os.getcwd()
    st.write(f'current_path: ',current_path)
-   
+
    #st.image('/workspaces/Marketing-MLOps/Data_Application/MLOps.png',caption = 'MLOps Project')
-   #st.image(os.path.join(os.getcwd(), 'MLOps.png'), caption= 'MLOps Project')
+   st.write(os.path.join(os.getcwd(), 'MLOps.png'), caption= 'MLOps Project')
    st.markdown("""
    This project aims to analyze and predict Black Friday sales using advanced machine learning operations (MLOps). 
    The Exploration and Analysis will show the visualization of the dataset.
