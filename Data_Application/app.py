@@ -10,12 +10,19 @@ import os
 # Define the directory you want to search in
 current_path = '/mount/src/marketing-mlops/Data_Science'
 
-# List all directories (folders) within the current path
-folders = [f for f in os.listdir(current_path) if os.path.isdir(os.path.join(current_path, f))]
+# List all items in the current path
+all_items = os.listdir(current_path)
 
-# Display the folders in the Streamlit app
+# Separate files and folders
+folders = [f for f in all_items if os.path.isdir(os.path.join(current_path, f))]
+files = [f for f in all_items if os.path.isfile(os.path.join(current_path, f))]
+
+# Display the folders and files in the Streamlit app
 st.write("Folders found in the current path:")
 st.write(folders)
+
+st.write("Files found in the current path:")
+st.write(files)
 def get_data():
     # Import the dataset
     data = pd.read_csv('/mount/src/marketing-mlops/Data_Engineer/data/marketing.csv')
