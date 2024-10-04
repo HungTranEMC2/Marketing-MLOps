@@ -34,7 +34,7 @@ with st.sidebar:
                """)
 #Home Page
 if selected == "Home":
-   st.title('Welcome to My Marketing MLOps Project Home Page')
+   st.title('Welcome to My Marketing Data Science Project Home Page')
    st.header('Black Friday Sales Analysis and Prediction App')
    st.image('/mount/src/marketing-mlops/Data_Application/MLOps.png', caption ='MLOps Project')
    st.markdown("""
