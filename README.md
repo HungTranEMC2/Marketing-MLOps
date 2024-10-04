@@ -1,6 +1,7 @@
 # Marketing-MLOps
 ![image](https://github.com/user-attachments/assets/349e5367-2e88-499a-9025-37c0338f522b)
-
+- Demo :
+  `hungtran.streamlit.app`
 ## Brief Summary
 This project demonstrate the complete lifecycle of a data science initiative. It begins with Extracting data from an API, followed by transformation,
 and loading it into a database. The next phase involves exploring and analyzing the dataset to understand its distribution and statistical properties.
