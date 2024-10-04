@@ -7,9 +7,13 @@ import streamlit_option_menu
 from streamlit_option_menu import option_menu
 import os
 
+
 # Define the directory you want to search in
 current_path = '/mount/src/marketing-mlops/Data_Science'
 
+os.chdir(current_path) 
+
+os.system('python model_xgb.py')
 # List all items in the current path
 all_items = os.listdir(current_path)
 
