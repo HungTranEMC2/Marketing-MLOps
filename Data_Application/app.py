@@ -28,7 +28,7 @@ with st.sidebar:
   st.subheader('This is My Contact Information')
   st.markdown("""
    - **Name:** Hung Tran
-   - **Email:** alexchan6788@gail.com
+   - **Email:** alexchan6788@gmail.com
    - **Linkedin:** https://www.linkedin.com/in/alextran02
    - **GitHub:** https://github.com/HungTranEMC2
                """)
