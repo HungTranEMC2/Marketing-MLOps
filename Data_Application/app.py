@@ -36,7 +36,8 @@ if selected == "Home":
    st.title('Welcome to My Marketing MLOps Project Home Page')
    st.header('Black Friday Sales Analysis and Prediction App')
    current_path = os.getcwd()
-   st.markdown(f'current_path: ',current_path)
+   st.write(f'current_path: ',current_path)
+   
    #st.image('/workspaces/Marketing-MLOps/Data_Application/MLOps.png',caption = 'MLOps Project')
    #st.image(os.path.join(os.getcwd(), 'MLOps.png'), caption= 'MLOps Project')
    st.markdown("""
