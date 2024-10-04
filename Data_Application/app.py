@@ -38,12 +38,11 @@ if selected == "Home":
    current_path = os.getcwd()
    st.write(f'current_path: ',current_path)
 
-   # List all directories (folders) within the current path
-   folders = [f for f in os.listdir(current_path) if os.path.isdir(os.path.join(current_path, f))]
+   # Define the path to the 'Data_Application' folder and the 'MLOps.png' file
+   image_path = os.path.join(current_path, 'Data_Application', 'MLOps.png')
 
-   # Display the folders in the Streamlit app
-   st.write("Folders found in the current path:")
-   st.write(folders)
+   st.image(image_path, caption ='MLOps Project')
+
 
    #st.image(' /mount/src/marketing-mlops/Data_Application/MLOps.png',caption = 'MLOps Project')
    
