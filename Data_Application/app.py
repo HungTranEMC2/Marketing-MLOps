@@ -38,7 +38,14 @@ if selected == "Home":
    current_path = os.getcwd()
    st.write(f'current_path: ',current_path)
 
-   st.image(' /mount/src/marketing-mlops/Data_Application/MLOps.png',caption = 'MLOps Project')
+   # List all directories (folders) within the current path
+   folders = [f for f in os.listdir(current_path) if os.path.isdir(os.path.join(current_path, f))]
+
+   # Display the folders in the Streamlit app
+   st.write("Folders found in the current path:")
+   st.write(folders)
+
+   #st.image(' /mount/src/marketing-mlops/Data_Application/MLOps.png',caption = 'MLOps Project')
    
    st.markdown("""
    This project aims to analyze and predict Black Friday sales using advanced machine learning operations (MLOps). 
