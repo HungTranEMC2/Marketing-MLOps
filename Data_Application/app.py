@@ -7,7 +7,7 @@ import streamlit_option_menu
 from streamlit_option_menu import option_menu
 import os
 
-
+current_path = os.getcwd()
 def get_data():
     # Import the dataset
     data = pd.read_csv('/workspaces/Marketing-MLOps/Data_Engineer/data/marketing.csv')
@@ -55,6 +55,13 @@ if selected == "Home":
 if selected == "Data":
    current_path = os.getcwd()
    st.write(f'current_path: ',current_path)
+   # List all directories (folders) within the current path
+   folders = [f for f in os.listdir(current_path) if os.path.isdir(os.path.join(current_path, f))]
+
+   # Display the folders in the Streamlit app
+   st.write("Folders found in the current path:")
+   st.write(folders)
+   
    df = get_data()
    st.dataframe(df)
    
