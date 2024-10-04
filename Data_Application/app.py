@@ -10,7 +10,7 @@ import os
 current_path = os.getcwd()
 def get_data():
     # Import the dataset
-    data = pd.read_csv('/workspaces/Marketing-MLOps/Data_Engineer/data/marketing.csv')
+    data = pd.read_csv('/mount/src/marketing-mlops/Data_Engineer/data/marketing.csv')
     data.drop(columns = ['Unnamed: 0'], inplace= True)
     return data
 
@@ -61,7 +61,7 @@ if selected == "Data":
    # Display the folders in the Streamlit app
    st.write("Folders found in the current path:")
    st.write(folders)
-   
+
    df = get_data()
    st.dataframe(df)
    
