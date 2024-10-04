@@ -63,7 +63,7 @@ def run_ml():
 
 	if st.button("Use XGBoost"):
 		sample = np.array(single_sample).reshape(1,-1)
-		model = load_model("C:/Users/289380/OneDrive - Resideo/Documents/Marketing-MLOps/Data_Science/model_xgb.pkl")
+		model = load_model("/workspaces/Marketing-MLOps/Data_Science/model_xgb.pkl")
 		prediction = model.predict(sample)
 
 		st.info("Predicted Purchase")
@@ -72,7 +72,7 @@ def run_ml():
 	
 	if st.button("Use Random Forest"):
 		sample = np.array(single_sample).reshape(1,-1)
-		model = load_model("C:/Users/289380/OneDrive - Resideo/Documents/Marketing-MLOps/Data_Science/model_random_forest.pkl")
+		model = load_model("/workspaces/Marketing-MLOps/Data_Science/model_random_forest.pkl")
 		prediction = model.predict(sample)
 
 		st.info("Predicted Purchase")
