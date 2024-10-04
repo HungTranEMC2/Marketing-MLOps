@@ -12,7 +12,7 @@ import plotly.express as px
 @st.cache_data
 def get_data():
     # Import the dataset
-    data = pd.read_csv('/Users/alextran/Documents/GitHub/Marketing-MLOps/Data_Engineer/data/marketing.csv')
+    data = pd.read_csv('/workspaces/Marketing-MLOps/Data_Engineer/data/marketing.csv')
     data.drop(columns = ['Unnamed: 0'], inplace= True)
     return data
 
