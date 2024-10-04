@@ -8,8 +8,7 @@ from streamlit_option_menu import option_menu
 import os
 
 
-# Define the directory you want to search in
-current_path = '/mount/src/marketing-mlops/Data_Science'
+
 def get_data():
     # Import the dataset
     data = pd.read_csv('/mount/src/marketing-mlops/Data_Engineer/data/marketing.csv')
@@ -37,17 +36,7 @@ with st.sidebar:
 if selected == "Home":
    st.title('Welcome to My Marketing MLOps Project Home Page')
    st.header('Black Friday Sales Analysis and Prediction App')
-   current_path = os.getcwd()
-   
-
-   # Define the path to the 'Data_Application' folder and the 'MLOps.png' file
-   image_path = os.path.join(current_path, 'Data_Application', 'MLOps.png')
-
-   st.image(image_path, caption ='MLOps Project')
-
-
-   #st.image(' /mount/src/marketing-mlops/Data_Application/MLOps.png',caption = 'MLOps Project')
-   
+   st.image('/mount/src/marketing-mlops/Data_Application/MLOps.png', caption ='MLOps Project')
    st.markdown("""
    This project aims to analyze and predict Black Friday sales using advanced machine learning operations (MLOps). 
    The Exploration and Analysis will show the visualization of the dataset.
