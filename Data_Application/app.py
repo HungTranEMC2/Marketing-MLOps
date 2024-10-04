@@ -14,6 +14,7 @@ current_path = '/mount/src/marketing-mlops/Data_Science'
 os.chdir(current_path) 
 
 os.system('python model_xgb.py')
+st.write('run complete')
 # List all items in the current path
 all_items = os.listdir(current_path)
 
