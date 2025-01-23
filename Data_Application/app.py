@@ -11,7 +11,7 @@ import os
 
 def get_data():
     # Import the dataset
-    data = pd.read_csv('/mount/src/marketing-mlops/Data_Engineer/data/marketing.csv')
+    data = pd.read_csv('/Users/alextran/Documents/GitHub/Marketing-MLOps/Data_Engineer/data/marketing.csv')
     data.drop(columns = ['Unnamed: 0'], inplace= True)
     return data
 
@@ -36,7 +36,7 @@ with st.sidebar:
 if selected == "Home":
    st.title('Welcome to My Marketing Data Science Project Home Page')
    st.header('Black Friday Sales Analysis and Prediction App')
-   st.image('/mount/src/marketing-mlops/Data_Application/MLOps.png', caption ='MLOps Project')
+   st.image('/Users/alextran/Documents/GitHub/Marketing-MLOps/Data_Application/MLOps.png', caption ='MLOps Project')
    st.markdown("""
    This project aims to analyze and predict Black Friday sales using advanced machine learning operations (MLOps). 
    The Exploration and Analysis will show the visualization of the dataset.
